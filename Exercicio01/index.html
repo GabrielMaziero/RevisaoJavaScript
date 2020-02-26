@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="cabecalho navbar navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
+                Formulário RD
+            </a>
+        </nav>
+    </header>
+    <main class="container">
+        <form id="checkout" class="row mt-6">
+            <div class="col-md-6 p-2">
+                <header class="backg p-2">
+                    Dados Médico
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="nomeMedico">Nome do Médico</label>
+                        <input class="form-control" type="text" id="nomeMedico" name="nomeMedico"
+                            placeholder="Digite o nome do Médico">
+                    </div>
+                    <div class="form-group">
+                        <label for="crmMedico">CRM do médico</label>
+                        <input class="form-control" type="text" id="crmMedico" name="crmMedico"
+                            placeholder="Digite o CRM do medico">
+                    </div>
+                    <div class="form-group">
+                        <label for="dataReceita">Data da receita</label>
+                        <input id="telefone" class="form-control" type="date" id="dataReceita" name="dataReceita"
+                            placeholder="Data da receita">
+                    </div>
+                    <div class="form-group">
+                        <label for="qtdCaixas">Quantidade de caixas</label>
+                        <input class="form-control" type="number" id="qtdCaixas" name="qtdCaixas"
+                            placeholder="Quantidade de caixas">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-2">
+                <header class="backg p-2">
+                    Dados Paciente
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="nomePaciente">Nome do paciente</label>
+                        <input class="form-control" type="text" id="nomePaciente" name="nomePaciente"
+                            placeholder="Digite o nome do paciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfPaciente">CPF</label>
+                        <input class="form-control" type="text" id="cpfPaciente" name="cpfPaciente"
+                            placeholder="Digite o CPF do paciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="dataNascimento">Data de nascimento</label>
+                        <input id="dataNascimento" class="form-control" type="date" id="dataNascimento"
+                            name="dataNascimento" placeholder="Data de nascimento">
+                    </div>
+                    <div class="form-group">
+                        <label for="sexo">Sexo</label>
+                        <div class="d-flex">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                    value="option1">
+                                <label class="form-check-label" for="gridRadios1">
+                                    Masculino
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Feminino
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <label for="formaEnvio">Forma de envio</label>
+                    <select name="formaEnvio" class="form-control">
+                        <option value="" disabled selected>Forma de envio</option>
+                        <option value="anexar">Anexar arquivo</option>
+                        <option value="whatsapp">Whatsapp</option>
+                        <option value="email">e-mail</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn btn-success btn-lg btn-block" type="button" data-toggle="modal"
+                data-target="#teste">Finalizar cadastro</button>
+        </form>
+    </main>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 1999-2020 RD Drogasil</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
